@@ -26,6 +26,8 @@ public class Projekt1_Bot extends AbstractBot {
     public Projekt1_Bot(Game game) {
         super(game);
         scout_bot=new Scout();
+        asd
+                bbb
     }
 
     @Override
