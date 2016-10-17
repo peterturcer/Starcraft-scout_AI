@@ -1,4 +1,4 @@
-package custom_AI.aStar;
+package scout_Bakalarka.aStar;
 
 import java.util.Stack;
 

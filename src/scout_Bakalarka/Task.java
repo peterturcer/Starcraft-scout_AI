@@ -1,4 +1,4 @@
-package custom_AI;
+package scout_Bakalarka;
 
 import sk.hackcraft.bwu.Game;
 

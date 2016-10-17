@@ -1,15 +1,11 @@
-package custom_AI;
+package scout_Bakalarka;
 
-import javafx.geometry.Pos;
 import jnibwapi.BaseLocation;
-import jnibwapi.ChokePoint;
 import jnibwapi.Position;
 import jnibwapi.Unit;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
 import sk.hackcraft.bwu.selection.UnitSet;
-
-import java.util.ArrayList;
 
 /**
  * Handles all actions of the scout bot

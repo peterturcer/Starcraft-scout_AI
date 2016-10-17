@@ -1,54 +1,38 @@
-package custom_AI;
+package Projekt1_ScoutAI;
 
 import jnibwapi.Player;
 import jnibwapi.Unit;
 import sk.hackcraft.bwu.*;
-import sk.hackcraft.bwu.Graphics;
-
-import java.awt.*;
 
 /**
- * Top class of AI bot with callback methods
+ * Created by Silent1 on 10.10.2016.
  */
-public class Bot extends AbstractBot {
+public class Projekt1_Bot extends AbstractBot {
 
-    ScoutAI scout;
+    private Scout scout_bot;
 
-    Robot r; //camera
-    public boolean show=false;
-    int aKeyCode=0;
 
     public static void main(String[] args) {
         BWU bwu=new BWU() {
             @Override
             protected sk.hackcraft.bwu.Bot createBot(Game game) {
-                sk.hackcraft.bwu.Bot customBot=new Bot(game);
+                sk.hackcraft.bwu.Bot customBot=new Projekt1_Bot(game);
                 return customBot;
             }
         };
         bwu.start();
     }
 
-    public Bot(Game game) {
+    public Projekt1_Bot(Game game) {
         super(game);
+        scout_bot=new Scout();
     }
 
     @Override
     public void gameStarted() {
-        //game.sendMessage("black sheep wall");  //fog
-        game.sendMessage("Bot successfully started!");
+        game.sendMessage("Projekt1_Bot successfully started!");
         game.getJNIBWAPI().setGameSpeed(20); //15
         game.enableUserInput();
-
-        scout=new ScoutAI(game);
-        scout.initializeAll();
-
-        try {
-            r = new Robot();
-
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
@@ -58,48 +42,12 @@ public class Bot extends AbstractBot {
 
     @Override
     public void gameUpdated() {
-        scout.manageAll();
+        scout_bot.helloWorld(game);
 
-        if(aKeyCode==49&&show) {
-            r.keyPress(49);
-        }
-        if(aKeyCode==50&&show) {
-            r.keyPress(50);
-        }
-        if(aKeyCode==51&&show) {
-            r.keyPress(51);
-        }
-        if(aKeyCode==52&&show) {
-            r.keyPress(52);
-        }
-        if(aKeyCode==53&&show) {
-            r.keyPress(53);
-        }
-        if(aKeyCode==54&&show) {
-            r.keyPress(54);
-        }
-        if(aKeyCode==55&&show) {
-            r.keyPress(55);
-        }
     }
 
     @Override
     public void keyPressed(int keyCode) {
-        if(keyCode==107) {
-            scout.manageTasks=true;
-        }
-        if(keyCode==106) {
-            show=!show;
-        }
-        if(keyCode==49) {
-            aKeyCode=49;
-        }
-        if(keyCode==50) {
-            aKeyCode=50;
-        }
-        if(keyCode==51) {
-            aKeyCode=51;
-        }
 
     }
 
@@ -120,7 +68,7 @@ public class Bot extends AbstractBot {
 
     @Override
     public void unitDiscovered(Unit unit) {
-        scout.unitDetectionManagement(unit);
+        scout_bot.detection(game,unit);
     }
 
     @Override
@@ -165,12 +113,12 @@ public class Bot extends AbstractBot {
 
     @Override
     public void draw(Graphics graphics) {
-        scout.drawAll(graphics);
+
     }
 
     @Override
     public void messageSent(String message) {
-        scout.messageHandler(message);
+
     }
 
     @Override

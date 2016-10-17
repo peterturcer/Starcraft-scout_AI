@@ -1,8 +1,7 @@
-package custom_AI;
+package scout_Bakalarka;
 
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
-import sk.hackcraft.bwu.Graphics;
 import sk.hackcraft.bwu.Vector2D;
 
 import java.util.ArrayList;

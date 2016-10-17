@@ -1,11 +1,8 @@
-package custom_AI;
+package scout_Bakalarka;
 
-import custom_AI.aStar.AStarPathCalculator;
-import custom_AI.aStar.Block;
-import javafx.geometry.Pos;
-import jnibwapi.Position;
+import scout_Bakalarka.aStar.AStarPathCalculator;
+import scout_Bakalarka.aStar.Block;
 import jnibwapi.Unit;
-import jnibwapi.types.UnitSizeType;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
 import sk.hackcraft.bwu.Vector2D;

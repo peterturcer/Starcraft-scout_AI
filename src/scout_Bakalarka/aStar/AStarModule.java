@@ -1,13 +1,11 @@
-package custom_AI.aStar;
+package scout_Bakalarka.aStar;
 
-import custom_AI.GraphicsExtended;
+import scout_Bakalarka.GraphicsExtended;
 import jnibwapi.Position;
 import jnibwapi.Unit;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
 import sk.hackcraft.bwu.selection.UnitSet;
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Top-level class used to execute path builder (AStarPathCalculator) with given grid map

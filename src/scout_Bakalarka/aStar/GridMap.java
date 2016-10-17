@@ -1,13 +1,10 @@
-package custom_AI.aStar;
+package scout_Bakalarka.aStar;
 
-import com.sun.prism.impl.Disposer;
-import custom_AI.GraphicsExtended;
-import custom_AI.PotentialField;
-import custom_AI.ScoutAI;
+import scout_Bakalarka.GraphicsExtended;
+import scout_Bakalarka.PotentialField;
 import jnibwapi.Position;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
-import sk.hackcraft.bwu.grid.Grid;
 
 import java.util.ArrayList;
 

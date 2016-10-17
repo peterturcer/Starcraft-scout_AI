@@ -1,9 +1,8 @@
-package custom_AI;
+package scout_Bakalarka;
 
 import jnibwapi.Position;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
-import java.util.ArrayList;
 
 /**
  * Layer above the game map - grid structure consisting of rectangular potential fields.

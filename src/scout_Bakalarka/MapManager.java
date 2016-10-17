@@ -1,6 +1,6 @@
-package custom_AI;
+package scout_Bakalarka;
 
-import custom_AI.aStar.*;
+import scout_Bakalarka.aStar.*;
 import jnibwapi.BaseLocation;
 import jnibwapi.ChokePoint;
 import jnibwapi.Position;

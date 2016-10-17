@@ -1,16 +1,13 @@
-package custom_AI;
+package scout_Bakalarka;
 
-import custom_AI.aStar.AStarPathCalculator;
-import custom_AI.aStar.GridMap;
-import javafx.scene.input.KeyCode;
+import scout_Bakalarka.aStar.AStarPathCalculator;
+import scout_Bakalarka.aStar.GridMap;
 import jnibwapi.Unit;
 import jnibwapi.types.UnitType;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
 import sk.hackcraft.bwu.Graphics;
 import sk.hackcraft.bwu.Vector2D;
-
-import java.awt.*;
 
 /**
  * Top level class of scouting module - connects and manages all modules.

@@ -1,6 +1,6 @@
-package custom_AI.aStar;
+package scout_Bakalarka.aStar;
 
-import custom_AI.GraphicsExtended;
+import scout_Bakalarka.GraphicsExtended;
 import jnibwapi.Position;
 import jnibwapi.util.BWColor;
 import sk.hackcraft.bwu.Game;
