@@ -16,7 +16,6 @@ public class Scout {
             if(!u.isMoving()) {
                 u.move(u.getPositionVector().add(new Vector2D(-500+new Random().nextInt(1000), -500+new Random().nextInt(1000))).toPosition(), false);
                 System.out.println("Hello");
-                asd
             }
         }
     }
