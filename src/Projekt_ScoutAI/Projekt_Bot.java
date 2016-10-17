@@ -7,7 +7,7 @@ import sk.hackcraft.bwu.*;
 /**
  * Created by Silent1 on 10.10.2016.
  */
-public class Projekt1_Bot extends AbstractBot {
+public class Projekt_Bot extends AbstractBot {
 
     private Scout scout_bot;
 
@@ -16,21 +16,21 @@ public class Projekt1_Bot extends AbstractBot {
         BWU bwu=new BWU() {
             @Override
             protected sk.hackcraft.bwu.Bot createBot(Game game) {
-                sk.hackcraft.bwu.Bot customBot=new Projekt1_Bot(game);
+                sk.hackcraft.bwu.Bot customBot=new Projekt_Bot(game);
                 return customBot;
             }
         };
         bwu.start();
     }
 
-    public Projekt1_Bot(Game game) {
+    public Projekt_Bot(Game game) {
         super(game);
         scout_bot=new Scout();
     }
 
     @Override
     public void gameStarted() {
-        game.sendMessage("Projekt1_Bot successfully started!");
+        game.sendMessage("Projekt_Bot successfully started!");
         game.getJNIBWAPI().setGameSpeed(20); //15
         game.enableUserInput();
     }
