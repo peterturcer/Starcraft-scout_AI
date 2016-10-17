@@ -1,4 +1,4 @@
-package Projekt1_ScoutAI;
+package Projekt_ScoutAI;
 
 import jnibwapi.Unit;
 import sk.hackcraft.bwu.Game;

@@ -1,4 +1,4 @@
-package Projekt1_ScoutAI;
+package Projekt_ScoutAI;
 
 import jnibwapi.Player;
 import jnibwapi.Unit;
