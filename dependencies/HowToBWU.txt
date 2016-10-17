@@ -1,0 +1,15 @@
+1. Download JDK from http://www.oracle.com/technetwork/java/javase/downloads/index.html Dont if you have (it can take a while
+2. Install JDK
+3. Download lastest ecplise IDE from http://www.eclipse.org/ (if you already have an eclipse, dont'
+4. Extract eclipse
+5. install starcraft broodwar (for example, to c:\StarCraft
+	- also apply patch BW 1161
+6. copy from dependencies/copy_content_to_windows to C:\Windows
+7. copy from dependencies/copy_contenct_to_starcraft to your starcraft installation
+8. copy dependencies/Chaoslauncher somewhere
+9. Run ChaosLauncher, configure starcraft installation path
+10. Open eclipse
+11. Configure include properties for BWU
+12. Run SampleBot in eclipse
+13. Run ChaosLauncher
+14. Configure match
